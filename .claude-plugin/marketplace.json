@@ -1,0 +1,17 @@
+{
+  "name": "zerg",
+  "owner": {
+    "name": "Gil Shapira"
+  },
+  "metadata": {
+    "description": "A team of parallel Claude Code sessions on one git repo: a boss plans and hands out the work, each aspect of the project gets a session and a worktree, and finished work lands on main once it's reviewed and its tests pass."
+  },
+  "plugins": [
+    {
+      "name": "zerg",
+      "source": "./",
+      "description": "A team of parallel Claude Code sessions on one git repo: a boss plans and hands out the work, each aspect of the project gets a session and a worktree, and finished work lands on main once it's reviewed and its tests pass.",
+      "category": "productivity"
+    }
+  ]
+}

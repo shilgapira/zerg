@@ -1,0 +1,7 @@
+{
+  "slots": {"build": 2},
+  "checks": [],
+  "tasks": {},
+  "usage_stop": 90,
+  "version": "{{VERSION}}"
+}

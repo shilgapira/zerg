@@ -1,0 +1,15 @@
+#!/bin/sh
+root=$(cd "$(dirname "$0")/.." && pwd)
+case "$1" in
+  task|mail|usage|init|tunnel) script="$root/scripts/$1.py"; shift ;;
+  *) echo "usage: zerg task|mail|usage|init|tunnel [args...]" >&2; exit 1 ;;
+esac
+probe='import sys; sys.exit(sys.version_info < (3, 9))'
+if command -v py >/dev/null 2>&1 && py -3 -c "$probe" >/dev/null 2>&1; then exec py -3 "$script" "$@"; fi
+for name in python3 python; do
+  path=$(command -v "$name" 2>/dev/null) || continue
+  "$path" -c "$probe" >/dev/null 2>&1 && exec "$path" "$script" "$@"
+done
+echo "zerg: no Python 3.9 or later found (tried py -3, python3, python). On Windows: winget install" \
+  "Python.Python.3.12, then restart Claude Code." >&2
+exit 1

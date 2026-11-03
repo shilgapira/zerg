@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git blame:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git merge-base:*)",
+      "Bash(git rev-list:*)",
+      "Bash(git cherry:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git for-each-ref:*)",
+      "Bash(git branch --show-current)",
+      "Bash(git branch --list:*)",
+      "Bash(git worktree list:*)",
+      "Bash(git stash list)",
+      "Bash(zerg mail *)",
+      "Bash(zerg usage)",
+      "Bash(zerg usage *)",
+      "Bash(zerg task todos)",
+      "Bash(zerg task todos *)",
+      "Bash(zerg task journal *)",
+      "Bash(zerg task audit)",
+      "Bash(zerg task audit *)",
+      "Bash(zerg task slots)",
+      "Bash(zerg task usertest)",
+      "Bash(zerg task usertest *)",
+      "Bash(zerg tunnel status *)"
+    ]
+  }
+}

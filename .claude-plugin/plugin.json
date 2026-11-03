@@ -1,0 +1,19 @@
+{
+  "name": "zerg",
+  "version": "0.4.2",
+  "description": "A team of parallel Claude Code sessions on one git repo: a boss plans and hands out the work, each aspect of the project gets a session and a worktree, and finished work lands on main once it's reviewed and its tests pass.",
+  "author": {
+    "name": "Gil Shapira"
+  },
+  "homepage": "https://github.com/shilgapira/zerg",
+  "repository": "https://github.com/shilgapira/zerg",
+  "license": "MIT",
+  "keywords": [
+    "multi-session",
+    "orchestration",
+    "worktrees",
+    "mailbox",
+    "session-launcher",
+    "claude-desktop"
+  ]
+}
